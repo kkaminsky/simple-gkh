@@ -7,7 +7,7 @@
           <h3><small>Tabs with Icons on Card</small></h3>
           <nav-tabs-card no-label>
             <template slot="content">
-              <md-tabs md-sync-route class="md-primary" md-alignment="left">
+              <md-tabs md-sync-route class="md-info" md-alignment="left">
                 <md-tab id="tab-home" md-label="Profile" md-icon="face">
                   <p>
                     I will be the leader of a company that ends up being worth

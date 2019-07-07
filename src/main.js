@@ -1,20 +1,8 @@
-// =========================================================
-// * Vue Material Kit - v1.1.0
-// =========================================================
-//
-// * Product Page: https://www.creative-tim.com/product/vue-material-kit
-// * Copyright 2019 Creative Tim (https://www.creative-tim.com)
-// * Licensed under MIT (https://github.com/creativetimofficial/vue-material-kit/blob/master/LICENSE.md)
-//
-// * Coded by Creative Tim
-//
-// =========================================================
-//
-// * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
+import Axios from "axios"
 
 import MaterialKit from "./plugins/material-kit";
 
@@ -25,6 +13,21 @@ Vue.use(MaterialKit);
 const NavbarStore = {
   showNavbar: false
 };
+
+const settings = {
+  apiKey: '59a55828-0cd7-468b-a92c-c702d2937654',
+  lang: 'ru_RU',
+  coordorder: 'latlong',
+  version: '2.1'
+}
+
+import YmapPlugin from 'vue-yandex-maps'
+
+Vue.use(YmapPlugin, settings)
+
+Vue.prototype.$http = Axios
+
+
 
 Vue.mixin({
   data() {

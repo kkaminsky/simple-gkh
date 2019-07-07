@@ -9,259 +9,256 @@
             <img :src="leaf2" alt="leaf2" class="leaf2" v-show="leafShow" />
             <img :src="leaf1" alt="leaf1" class="leaf1" v-show="leafShow" />
             <div class="brand">
-              <h1>Vue Material Kit</h1>
-              <h3>A Badass Vue.js UI Kit made with Material Design.</h3>
+              <h1>Чистый город</h1>
+              <h3>Сервис для повышения качества жизни населения</h3>
             </div>
           </div>
         </div>
       </div>
     </parallax>
     <div class="main main-raised">
-      <div class="section section-basic">
+      <div class="section">
         <div class="container">
-          <div class="title">
-            <h2>Basic Elements</h2>
+          <div class="md-layout">
+            <div
+                    class="md-layout-item md-size-66 md-xsmall-size-100 mx-auto text-center"
+            >
+              <h2 class="title text-center">Основные преимущества – скорость и удобство подачи обращения</h2>
+              <h5 class="description">
+                Мы предлагаем сервис, с помощью которого люди смогут с легкостью формировать обращения, и эти обращения будут распознаваться и передаваться к нужным адресатам
+              </h5>
+            </div>
           </div>
-          <basic-elements></basic-elements>
+          <div class="features text-center">
+            <div class="md-layout">
+              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                <div class="info">
+                  <div class="icon icon-info">
+                    <md-icon>chat</md-icon>
+                  </div>
+                  <h4 class="info-title">Способы подачи через Чат бот  Viber,
+                    Яндекс Алиса,
+                    Через сайт</h4>
+
+                </div>
+              </div>
+              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                <div class="info">
+                  <div class="icon icon-success">
+                    <md-icon>verified_user</md-icon>
+                  </div>
+                  <h4 class="info-title">Распознавание текста с помощью ИИ и распределение заявок по нужным инстанциям</h4>
+
+                </div>
+              </div>
+              <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                <div class="info">
+                  <div class="icon icon-danger">
+                    <md-icon>fingerprint</md-icon>
+                  </div>
+                  <h4 class="info-title">Просмотр статуса заявки в реальном времени и контроль исполнения ответственными лицами</h4>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="section section-navbars">
-        <div class="container">
-          <small-navigation></small-navigation>
-        </div>
-        <navigation></navigation>
       </div>
       <div class="section section-tabs">
         <div class="container">
-          <tabs></tabs>
-        </div>
-      </div>
-      <div class="section section-white">
-        <div class="container">
-          <nav-pills></nav-pills>
-        </div>
-      </div>
-      <div class="section section-notifications">
-        <div class="container">
-          <div class="title">
-            <h3>Notifications</h3>
-          </div>
-        </div>
-        <notifications></notifications>
-      </div>
-      <div class="section">
-        <div class="container">
-          <typography-images></typography-images>
-        </div>
-      </div>
-      <div class="section section-javascript">
-        <div class="container">
-          <javascript-components></javascript-components>
-        </div>
-      </div>
-      <div class="section">
-        <div class="container text-center">
-          <div class="md-layout">
-            <div
-              class="md-layout-item md-size-66 md-xsmall-size-100 ml-auto mr-auto text-center"
-            >
-              <h2>Completed with examples</h2>
-              <h4>
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. More importantly, looking at them will give you a picture of
-                what you can built with this powerful kit.
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section section-signup page-header" :style="signupImage">
-        <div class="container">
-          <div class="md-layout">
-            <div
-              class="md-layout-item md-size-33 md-medium-size-40 md-small-size-50 md-xsmall-size-70 mx-auto text-center"
-            >
-              <login-card header-color="green">
-                <h4 slot="title" class="card-title">Login</h4>
-                <md-button
-                  slot="buttons"
-                  href="javascript:void(0)"
-                  class="md-just-icon md-simple md-white"
-                >
-                  <i class="fab fa-facebook-square"></i>
-                </md-button>
-                <md-button
-                  slot="buttons"
-                  href="javascript:void(0)"
-                  class="md-just-icon md-simple md-white"
-                >
-                  <i class="fab fa-twitter"></i>
-                </md-button>
-                <md-button
-                  slot="buttons"
-                  href="javascript:void(0)"
-                  class="md-just-icon md-simple md-white"
-                >
-                  <i class="fab fa-google-plus-g"></i>
-                </md-button>
-                <p slot="description" class="description">Or Be Classical</p>
-                <md-field class="md-form-group" slot="inputs">
-                  <md-icon>face</md-icon>
-                  <label>First Name...</label>
-                  <md-input v-model="firstname"></md-input>
-                </md-field>
-                <md-field class="md-form-group" slot="inputs">
-                  <md-icon>email</md-icon>
-                  <label>Email...</label>
-                  <md-input v-model="email" type="email"></md-input>
-                </md-field>
-                <md-field class="md-form-group" slot="inputs">
-                  <md-icon>lock_outline</md-icon>
-                  <label>Password...</label>
-                  <md-input v-model="password"></md-input>
-                </md-field>
-                <md-button slot="footer" class="md-simple md-success md-lg">
-                  Get Started
-                </md-button>
-              </login-card>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="md-layout">
-        <div class="md-layout-item text-center">
-          <md-button href="#/login" class="md-simple md-success md-lg"
-            >View Login Page</md-button
-          >
-        </div>
-      </div>
-      <div class="section section-examples">
-        <div class="container-fluid text-center">
-          <div class="md-layout">
-            <div class="md-layout-item">
-              <a href="#/landing" target="_blank">
-                <img
-                  :src="landing"
-                  alt="Rounded Image"
-                  class="img-raised rounded img-fluid"
-                />
-              </a>
-              <md-button href="#/landing" class="md-simple md-success md-lg"
-                >View Landing Page</md-button
-              >
-            </div>
-            <div class="md-layout-item">
-              <a href="#/profile" target="_blank">
-                <img
-                  :src="profile"
-                  alt="Rounded Image"
-                  class="img-raised rounded img-fluid"
-                />
-              </a>
-              <md-button href="#/profile" class="md-simple md-success md-lg"
-                >View Profile Page</md-button
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section section-download" id="downloadSection">
-        <div class="container">
-          <div class="md-layout text-center">
-            <div class="md-layout-item md-size-66 md-small-size-100 mx-auto">
-              <h2>Do you love this UI Kit?</h2>
-              <h4>
-                Cause if you do, it can be yours for FREE. Hit the buttons below
-                to navigate to our website where you can find the kit. Our
-                friends from
-                <a
-                  href="https://themeisle.com/?utm_campaign=mkfree-hestia&amp;utm_source=creativetim&amp;utm_medium=website"
-                  target="_blank"
-                  >ThemeIsle</a
-                >
-                created a Wordpress Theme which can be also downloaded for free.
-                Start a new project or give an old Bootstrap project a new look!
-              </h4>
-            </div>
-            <div class="md-layout-item md-size-50 md-small-size-100 mx-auto">
-              <md-button
-                href="https://www.creative-tim.com/product/material-kit"
-                target="_blank"
-                class="md-success md-lg"
-                ><i class="fab fa-html5"></i> Free HTML Download</md-button
-              >
-              <md-button
-                href="https://themeisle.com/themes/hestia/?utm_campaign=mkfree-hestia&amp;utm_source=creativetim&amp;utm_medium=website"
-                class="md-success md-lg"
-                target="_blank"
-                ><i class="fab fa-wordpress"></i> Wordpress Theme</md-button
-              >
-            </div>
-          </div>
-          <br /><br />
+          <div class="wrapper">
+            <div id="nav-tabs">
+              <h3>Заявления</h3>
+              <div class="md-layout">
+                <div class="md-layout-item md-size-50 md-small-size-100" v-for="(i,index) in orderSlice">
+                  <h3><small>Дело номер {{i.number}}</small></h3>
+                  <nav-tabs-card no-label>
+                    <template slot="content">
+                      <md-tabs md-sync-route :class="classes[parseInt(getRandomArbitrary(0,4))]" md-alignment="left">
+                        <md-tab id="tab-home" md-label="Описание" md-icon="face">
+                          <p style="text-align: left"> Категории
+                          <ul style="text-align: left">
+                          <li>
+                            {{i.orderCategoriesById.map(c=>c.category.word)[0]}}
+                          </li>
+                        </ul>
+                          Заявитель
+                          <ul style="text-align: left">
+                            <li >
+                              {{i.applicant}}
+                            </li>
+                          </ul>
+                          Исполнитель
+                          <ul style="text-align: left">
+                            <li >
+                              {{i.executor.name}}
+                            </li>
+                            <li >
+                              {{i.executor.communicationData}}
+                            </li>
 
-          <div class="md-layout text-center">
-            <div class="md-layout-item md-size-66 md-small-size-100 mx-auto">
-              <h2>Want more?</h2>
-              <h4>
-                We've just launched
-                <a
-                  href="https://www.creative-tim.com/product/vue-material-dashboard-pro?ref=utp-mk-demos"
-                  target="_blank"
-                  >Vue Material Dashboard PRO</a
-                >
-                and
-                <a
-                  href="https://www.creative-tim.com/product/vue-material-kit-pro?ref=utp-vmk-demos"
-                  target="_blank"
-                  >Vue Material Kit PRO</a
-                >. Every product has a huge number of components, sections and
-                example pages. Start Your Development With A Badass Bootstrap UI
-                Kit inspired by Material Design.
-              </h4>
-            </div>
-            <div class="md-layout-item md-size-50 md-small-size-100 mx-auto">
-              <div class="btn-container">
-                <md-button
-                  href="https://www.creative-tim.com/product/vue-material-kit-pro?ref=utp-vmk-demos"
-                  class="md-button md-success md-lg md-upgrade"
-                  target="_blank"
-                  ><md-icon>unarchive</md-icon>Vue Material Kit PRO</md-button
-                >
-                <md-button
-                  href="https://www.creative-tim.com/product/vue-material-dashboard-pro?ref=utp-vmd-demos"
-                  class="md-button md-success md-lg md-upgrade"
-                  target="_blank"
-                  ><md-icon>unarchive</md-icon>Vue Material Dashboard
-                  PRO</md-button
-                >
+                          </ul>
+                          Прогнозируемая дата выполнения
+                          <ul>
+                            <li>
+                              {{parseISOString(i.dateCalculateEnd)}}
+                            </li>
+                          </ul>
+                          </p>
+                        </md-tab>
+
+                        <md-tab id="tab-pages" md-label="Текст заявки" md-icon="chat">
+                          <p>
+                            {{i.text}}
+                          </p>
+                        </md-tab>
+
+                        <md-tab id="tab-posts" md-label="События" md-icon="build">
+
+                            <ul style="text-align: left" v-for="event in i.events">
+                            <li>{{ event.statusTypeByTypeId.name + " - "+parseISOString(event.date)}}</li>
+                        </ul>
+
+                        </md-tab>
+                      </md-tabs>
+                    </template>
+                  </nav-tabs-card>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="sharing-area text-center">
-            <div class="md-layout">
-              <div class="md-layout-item">
-                <h3>Thank you for supporting us!</h3>
-              </div>
-            </div>
+                <pagination
+                        class="pagination-info"
+                        v-model="infoPagination"
+                        with-text
+                        :page-count="Math.ceil(this.orders.length/4)"
+                >
+                </pagination>
 
-            <md-button class="md-twitter"
-              ><i class="fab fa-twitter"></i>Tweet</md-button
-            >
-            <md-button class="md-facebook"
-              ><i class="fab fa-facebook-square"></i> Share</md-button
-            >
-            <md-button class="md-google"
-              ><i class="fab fa-google-plus"></i> Share</md-button
-            >
-            <md-button class="md-github"
-              ><i class="fab fa-github"></i> Star</md-button
-            >
+
+
+
+            </div>
           </div>
         </div>
       </div>
+      <div class="section section-contacts">
+        <div class="container">
+          <div class="md-layout">
+            <div class="md-layout-item md-size-66 md-xsmall-size-100 mx-auto">
+              <h2 class="text-center title">Создайте заявку</h2>
+              <h4 class="text-center description">
+                Опишите как можно более подробно проблему, даже можно своими словами, мы распознаем, и выберите адрес на карте
+              </h4>
+              <form class="contact-form">
+                <div class="md-layout" v-if="show">
+                  <div class="md-layout-item md-size-50">
+                    <md-field>
+                      <label>Выше имя</label>
+                      <md-input v-model="name" type="text"></md-input>
+                    </md-field>
+                  </div>
+                  <div class="md-layout-item md-size-50">
+                    <md-field>
+                      <label>Адрес или телефон</label>
+                      <md-input v-model="email" type="email"></md-input>
+                    </md-field>
+                  </div>
+                </div>
+                <md-field maxlength="5">
+                  <label>Введите текст заявки</label>
+                  <md-textarea v-model="message"></md-textarea>
+                </md-field>
+
+                <md-field>
+                  <label>Выберите адрес на карте</label>
+                  <md-input v-model="address" type="email"></md-input>
+                </md-field>
+                <div class="md-layout">
+                  <div class="md-layout-item md-size-33 mx-auto text-center">
+                    <md-button class="md-success" @click="send()">Отправить заявку</md-button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+              <modal v-if="classicModal" @close="classicModalHide">
+                <template slot="header">
+                  <h4 class="modal-title">{{modalTitle}}</h4>
+                  <md-button
+                          class="md-simple md-just-icon md-round modal-default-button"
+                          @click="classicModalHide"
+                  >
+                    <md-icon>clear</md-icon>
+                  </md-button>
+                </template>
+
+                <template slot="body">
+                  <div style="text-align: left">
+                    Определенная Категории:
+                  </div>
+                  <br>
+                  <div style="text-align: left">
+                    {{categs[0]}}
+                  </div>
+                  <br>
+                  <div style="text-align: left">
+                    Исполнитель:
+                  </div>
+                  <br>
+                  <div style="text-align: left">
+                    {{executor}}
+                  </div>
+                  <div style="text-align: left">
+                    {{executorContacts}}
+                  </div>
+                  <br>
+                  <div style="text-align: left">Ожидаемая дата выполнения: </div>
+                  <br>
+                  <div style="text-align: left">
+                    {{predictDate}}
+                  </div>
+
+                </template>
+
+                <template slot="footer">
+
+                  <md-button
+                          class="md-success md-simple"
+                          @click="classicModalHide"
+                  >Ok</md-button
+                  >
+                </template>
+              </modal>
+
+                    <div>
+                        <yandex-map :coords="coords" @click="onClick">
+
+                          <ymap-marker
+                                  marker-id="123"
+                                  :coords="coords"
+                                  :options="options"
+
+                          ></ymap-marker>
+
+
+                          <ymap-marker v-for="(mrk, index) in orders" :key="mrk.id"
+                                       marker-id="mrk.id"
+                                       marker-type="placemark"
+                                       :coords="[ parseFloat(mrk.longitude),parseFloat(mrk.latitude)]"
+                                       :balloon-template="balloonTemplate"
+                                       :callbacks="{
+          click: () =>{
+              markerCallback(mrk)
+          }
+        }">
+                          </ymap-marker>
+
+                        </yandex-map>
+                    </div>
     </div>
   </div>
 </template>
@@ -276,9 +273,17 @@ import Notifications from "./components/NotificationsSection";
 import TypographyImages from "./components/TypographyImagesSection";
 import JavascriptComponents from "./components/JavascriptComponentsSection";
 import { LoginCard } from "@/components";
+import { NavTabsCard } from "@/components";
+import { Pagination } from "@/components";
+import { Modal } from "@/components";
+
+
 
 export default {
   components: {
+    Modal,
+    Pagination,
+    NavTabsCard,
     BasicElements,
     Navigation,
     SmallNavigation,
@@ -292,6 +297,18 @@ export default {
   name: "index",
   bodyClass: "index-page",
   props: {
+    teamImg1: {
+      type: String,
+      default: require("@/assets/img/faces/avatar.jpg")
+    },
+    teamImg2: {
+      type: String,
+      default: require("@/assets/img/faces/christian.jpg")
+    },
+    teamImg3: {
+      type: String,
+      default: require("@/assets/img/faces/kendall.jpg")
+    },
     image: {
       type: String,
       default: require("@/assets/img/vue-mk-header.jpg")
@@ -312,6 +329,10 @@ export default {
       type: String,
       default: require("@/assets/img/leaf1.png")
     },
+    vk: {
+      type: String,
+      default: require("@/assets/img/vk-social-network-logo.svg")
+    },
     signup: {
       type: String,
       default: require("@/assets/img/city.jpg")
@@ -328,10 +349,30 @@ export default {
   data() {
     return {
       firstname: null,
+      options:{
+        preset: "islands#redDotIcon"
+      },
+      classicModal: false,
+      modalTitle: "",
       email: null,
+      address: null,
+      addressPoints: null,
       password: null,
-      leafShow: false
+      leafShow: false,
+      name: null,
+      message: null,
+      categs:[],
+      executor:"",
+      executorContacts:"",
+      predictDate:"",
+      infoPagination: 1,
+      classes:["md-info","md-danger","md-warning","md-success"],
+      orders: [1,2,3,4,5,6,7],
+        coords: [57.153110,65.578404]
     };
+  },
+  created(){
+    this.getOrders()
   },
   methods: {
     leafActive() {
@@ -340,9 +381,109 @@ export default {
       } else {
         this.leafShow = true;
       }
+    },
+    getRandomArbitrary(min, max) {
+      console.log(Math.random() * (max - min) + min)
+
+  return Math.random() * (max - min) + min;
+},
+    classicModalHide() {
+      this.classicModal = false;
+    },
+    send(){
+      if(localStorage.getItem('userId')===null){
+        this.$http.post('/api/registerOrderOther',{
+          email: this.email,
+          text: this.message,
+          latitude: this.addressPoints[0],
+          longitude: this.addressPoints[1]
+        }).then(res=>{
+          this.modalTitle = "Дело с номером " + res.data.number + " приянто!"
+          this.categs = res.data.orderCategoriesById.map(c=>c.category.word)
+          this.executor = res.data.executor.name
+          this.executorContacts = res.data.executor.communicationData
+          this.predictDate = this.parseISOString(res.data.dateCalculateEnd)
+          this.classicModal = true
+          this.getOrders()
+        })
+      }
+      else {
+        this.$http.post('/api/registerOrderVk',{
+          userId: localStorage.getItem('userId'),
+          text: this.message,
+          latitude: this.addressPoints[0],
+          longitude: this.addressPoints[1]
+        }).then(res=>{
+          this.modalTitle = "Дело с номером " + res.data.number + " приянто!"
+          this.categs = res.data.orderCategoriesById.map(c=>c.category.word)
+          this.executor = res.data.executor.name
+          this.executorContacts = res.data.executor.communicationData
+          this.predictDate = this.parseISOString(res.data.dateCalculateEnd)
+          this.classicModal = true
+        })
+
+      }
+    },
+    parseISOString(s) {
+      var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', };
+      var b = s.split(/\D+/);
+      return new Date(Date.UTC(b[0], --b[1], b[2], b[3], b[4], b[5], b[6])).toLocaleDateString('ru-RU', options) + " " + new Date(Date.UTC(b[0], --b[1], b[2], b[3], b[4], b[5], b[6])).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) ;
+    },
+    getOrders(){
+      this.$http.get('/api/getOrders').then(
+              res =>{
+                this.orders = res.data
+                this.orders.forEach(o=>{
+                  console.log(o)
+                  console.log(parseFloat(o.longitude))
+                })
+              }
+      )
+    },
+      onClick(e) {
+        this.coords = e.get('coords')
+          this.$http.get("https://geocode-maps.yandex.ru/1.x/?apikey=59a55828-0cd7-468b-a92c-c702d2937654&format=json&geocode="+e.get('coords')[1].toString()+","+e.get('coords')[0].toString()).then(
+                  res=>{
+                    this.address = null
+                    this.addressPoints = null
+                    this.address = res.data.response.GeoObjectCollection.featureMember[0].GeoObject.name
+                    this.addressPoints = res.data.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos.split(' ')
+                    console.log(this.addressPoints)
+
+                  },
+                  err=>{
+            alert(err.message)
+          })
+
+      },
+    markerCallback(mrk){
+      this.mrk = mrk
     }
+
   },
   computed: {
+    show(){
+      return localStorage.getItem("userId")===null
+    },
+
+      balloonTemplate() {
+          return `
+        <p class="red">Номер дела: ${this.coords}</p>
+        <p>Категории: Coming soon</p>
+        <img src="http://via.placeholder.com/350x150">
+      `
+      },
+    balloonTemplate2() {
+      return `
+        <h1 class="red">Hi, everyone!</h1>
+        <p>I am here: ${this.coords}</p>
+        <img src="http://via.placeholder.com/350x150">
+      `
+    },
+    orderSlice(){
+      let orders = this.orders.slice()
+      return orders.slice(this.infoPagination*2-2,this.infoPagination*2)
+    },
     headerStyle() {
       return {
         backgroundImage: `url(${this.image})`
@@ -352,7 +493,8 @@ export default {
       return {
         backgroundImage: `url(${this.signup})`
       };
-    }
+    },
+
   },
   mounted() {
     this.leafActive();
@@ -363,6 +505,14 @@ export default {
   }
 };
 </script>
+<style>
+    .ymap-container {
+        height: 600px;
+    }
+    .red {
+        color: red;
+    }
+</style>
 <style lang="scss">
 .section-download {
   .md-button + .md-button {

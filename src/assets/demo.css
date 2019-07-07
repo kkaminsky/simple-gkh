@@ -176,10 +176,10 @@
 
 .leaf4 {
   right: 172px;
-  top: -122px;
+  top: -142px;
   width: 17%;
   width: 32%;
-  transform: rotate(-83deg);
+  transform: rotate(-45deg);
 }
 
 .leaf3 {
@@ -187,7 +187,7 @@
   right: -69px;
   left: auto;
   width: 24%;
-  transform: rotate(-13deg);
+  transform: rotate(-1deg);
 }
 
 .leaf2 {

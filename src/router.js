@@ -1,11 +1,11 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Index from "./views/Index.vue";
-import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
 import Profile from "./views/Profile.vue";
 import MainNavbar from "./layout/MainNavbar.vue";
 import MainFooter from "./layout/MainFooter.vue";
+import RedirectPage from "./views/RedirectPage.vue";
 
 Vue.use(Router);
 
@@ -21,21 +21,17 @@ export default new Router({
       }
     },
     {
-      path: "/landing",
-      name: "landing",
-      components: { default: Landing, header: MainNavbar, footer: MainFooter },
-      props: {
-        header: { colorOnScroll: 400 },
-        footer: { backgroundColor: "black" }
-      }
-    },
-    {
       path: "/login",
       name: "login",
       components: { default: Login, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 }
       }
+    },
+    {
+      path: '/redirect',
+      name: 'redirect',
+      component: RedirectPage
     },
     {
       path: "/profile",
@@ -53,5 +49,6 @@ export default new Router({
     } else {
       return { x: 0, y: 0 };
     }
-  }
+  },
+  mode:'history'
 });
